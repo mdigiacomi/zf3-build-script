@@ -4,9 +4,9 @@
 
 apt update
 
-apt dist-upgrade
+apt dist-upgrade -y
 
-apt install bc bison build-essential ccache curl flex g++-multilib gcc-multilib git gnupg gperf imagemagick lib32ncurses5-dev lib32readline-dev lib32z1-dev libesd0-dev liblz4-tool libncurses5-dev libsdl1.2-dev libssl-dev libwxgtk3.0-dev libxml2 libxml2-utils lzop pngcrush rsync schedtool squashfs-tools xsltproc zip zlib1g-dev repo openjdk-8-jdk 
+apt install -y bc bison build-essential ccache curl flex g++-multilib gcc-multilib git gnupg gperf imagemagick lib32ncurses5-dev lib32readline-dev lib32z1-dev libesd0-dev liblz4-tool libncurses5-dev libsdl1.2-dev libssl-dev libwxgtk3.0-dev libxml2 libxml2-utils lzop pngcrush rsync schedtool squashfs-tools xsltproc zip zlib1g-dev repo openjdk-8-jdk 
 
 mkdir -p /home/android/
 
@@ -24,8 +24,8 @@ git clone https://gitlab.com/LineageOS-Zenfone3/kernel_asus_Z017.git /home/andro
 
 # Cloning Dependencies
 
-git clone https://gitlab.com/LineageOS-Zenfone3/android_hardware_qcom_audio-caf_msm8937_asus.git /hardware/qcom/audio-caf/msm8937
-git clone https://gitlab.com/LineageOS-Zenfone3/android_hardware_qcom_audio-caf_msm8996_asus.git /hardware/qcom/audio-caf/msm8996
+git clone https://gitlab.com/LineageOS-Zenfone3/android_hardware_qcom_audio-caf_msm8937_asus.git /hardware/qcom/audio-caf/msm8937/legacy
+git clone https://gitlab.com/LineageOS-Zenfone3/android_hardware_qcom_audio-caf_msm8996_asus.git /hardware/qcom/audio-caf/msm8996/legacy
 
 # Fixing FM
 rm -Rf /home/android/vendor/qcom/opensource/fm
