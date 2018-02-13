@@ -26,6 +26,8 @@ git clone https://gitlab.com/LineageOS-Zenfone3/kernel_asus_Z017.git /home/andro
 
 git clone https://gitlab.com/LineageOS-Zenfone3/android_hardware_qcom_audio-caf_msm8937_asus.git /home/android/hardware/qcom/audio-caf/msm8937/legacy
 git clone https://gitlab.com/LineageOS-Zenfone3/android_hardware_qcom_audio-caf_msm8996_asus.git /home/android/hardware/qcom/audio-caf/msm8996/legacy
+git clone https://github.com/LineageOS/android_packages_resources_devicesettings.git /home/android/packages/resources/devicesettings
+
 
 # Fixing FM
 rm -Rf /home/android/vendor/qcom/opensource/fm
