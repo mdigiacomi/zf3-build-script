@@ -32,7 +32,7 @@ rm -Rf /home/android/vendor/qcom/opensource/fm
 git clone https://github.com/LineageOS/android_hardware_qcom_fm.git /home/android/vendor/qcom/opensource/fm
 
 # Running Build
-source build/envsetup.sh
+source /home/android/build/envsetup.sh
 breakfast Z017
 export ANDROID_JACK_VM_ARGS="-Dfile.encoding=UTF-8 -XX:+TieredCompilation -Xmx8G"
 croot
