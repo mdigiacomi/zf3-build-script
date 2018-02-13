@@ -18,9 +18,9 @@ repo sync -j 16
 
 # Cloning Zenfone Resources
 
-git clone https://gitlab.com/LineageOS-Zenfone3/device_asus_Z017.git /home/android/device/asus/Z017/
-git clone https://gitlab.com/LineageOS-Zenfone3/vendor_asus_Z017.git /home/android/vendor/asus/Z017/
-git clone https://gitlab.com/LineageOS-Zenfone3/kernel_asus_Z017.git /home/android/kernel/asus/Z017/
+git clone https://gitlab.com/LineageOS-Zenfone3/device_asus_Z017.git -b cm-14.1 /home/android/device/asus/Z017/
+git clone https://gitlab.com/LineageOS-Zenfone3/vendor_asus_Z017.git -b N /home/android/vendor/asus/Z017/
+git clone https://gitlab.com/LineageOS-Zenfone3/kernel_asus_Z017.git -b N /home/android/kernel/asus/Z017/
 
 # Cloning Dependencies
 
