@@ -14,13 +14,13 @@ cd /home/android/
 
 repo init -u https://github.com/LineageOS/android.git -b cm-14.1
 
-repo sync -j 16
+repo sync -j 32
 
 # Cloning Zenfone Resources
 
-git clone https://gitlab.com/LineageOS-Zenfone3/device_asus_Z017.git -b cm-14.1 /home/android/device/asus/Z017/
-git clone https://gitlab.com/LineageOS-Zenfone3/vendor_asus_Z017.git -b N /home/android/vendor/asus/Z017/
-git clone https://gitlab.com/LineageOS-Zenfone3/kernel_asus_Z017.git -b N /home/android/kernel/asus/Z017/
+git clone https://gitlab.com/LineageOS-Zenfone3/device_asus_14.2020.1712.85.git -b cm-14.1 /home/android/device/asus/Z017/
+git clone https://gitlab.com/LineageOS-Zenfone3/vendor_asus_14.2020.1712.85.git -b N /home/android/vendor/asus/Z017/
+git clone https://gitlab.com/LineageOS-Zenfone3/kernel_asus_14.2020.1712.85.git -b N /home/android/kernel/asus/Z017/
 
 # Cloning Dependencies
 
@@ -31,14 +31,14 @@ git clone https://github.com/LineageOS/android_packages_resources_devicesettings
 
 # Fixing FM
 rm -Rf /home/android/vendor/qcom/opensource/fm
-git clone https://github.com/LineageOS/android_hardware_qcom_fm.git /home/android/vendor/qcom/opensource/fm
+#git clone https://github.com/LineageOS/android_hardware_qcom_fm.git /home/android/vendor/qcom/opensource/fm
 
 # Running Build
-source /home/android/build/envsetup.sh
+source build/envsetup.sh
 breakfast Z017
 export ANDROID_JACK_VM_ARGS="-Dfile.encoding=UTF-8 -XX:+TieredCompilation -Xmx8G"
 croot
-make bacon
+make bacon -j 32
 
 
 
