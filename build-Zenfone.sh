@@ -25,20 +25,10 @@ git clone https://gitlab.com/LineageOS-Zenfone3/kernel_asus_14.2020.1712.85.git 
 # Cloning Dependencies
 
 git clone https://gitlab.com/LineageOS-Zenfone3/android_hardware_qcom_audio-caf_msm8937_asus.git /home/android/hardware/qcom/audio-caf/msm8937/legacy
-git clone https://gitlab.com/LineageOS-Zenfone3/android_hardware_qcom_audio-caf_msm8996_asus.git /home/android/hardware/qcom/audio-caf/msm8996/legacy
+#git clone https://gitlab.com/LineageOS-Zenfone3/android_hardware_qcom_audio-caf_msm8996_asus.git /home/android/hardware/qcom/audio-caf/msm8996/legacy
 git clone https://github.com/LineageOS/android_packages_resources_devicesettings.git /home/android/packages/resources/devicesettings
 
 
 # Fixing FM
 rm -Rf /home/android/vendor/qcom/opensource/fm
 #git clone https://github.com/LineageOS/android_hardware_qcom_fm.git /home/android/vendor/qcom/opensource/fm
-
-# Running Build
-source build/envsetup.sh
-breakfast Z017
-export ANDROID_JACK_VM_ARGS="-Dfile.encoding=UTF-8 -XX:+TieredCompilation -Xmx8G"
-croot
-make bacon -j 32
-
-
-
