@@ -25,7 +25,7 @@ git clone https://gitlab.com/LineageOS-Zenfone3/kernel_asus_14.2020.1712.85.git 
 # Cloning Dependencies
 
 git clone https://gitlab.com/LineageOS-Zenfone3/android_hardware_qcom_audio-caf_msm8937_asus.git /home/android/hardware/qcom/audio-caf/msm8937/legacy
-#git clone https://gitlab.com/LineageOS-Zenfone3/android_hardware_qcom_audio-caf_msm8996_asus.git /home/android/hardware/qcom/audio-caf/msm8996/legacy
+git clone https://gitlab.com/LineageOS-Zenfone3/android_hardware_qcom_audio-caf_msm8996_asus.git /home/android/hardware/qcom/audio-caf/msm8996/legacy
 git clone https://github.com/LineageOS/android_packages_resources_devicesettings.git /home/android/packages/resources/devicesettings
 
 
