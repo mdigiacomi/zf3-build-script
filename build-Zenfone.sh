@@ -20,7 +20,7 @@ repo sync -j 32
 
 git clone https://gitlab.com/LineageOS-Zenfone3/device_asus_14.2020.1712.85.git -b master /home/android/device/asus/Z017/
 git clone https://gitlab.com/LineageOS-Zenfone3/vendor_asus_14.2020.1712.85.git -b master /home/android/vendor/asus/Z017/
-git clone https://gitlab.com/LineageOS-Zenfone3/kernel_asus_14.2020.1712.85.git -b master /home/android/kernel/asus/Z017/
+git clone https://gitlab.com/LineageOS-Zenfone3/kernel_asus_14.2020.1712.85.git -b N /home/android/kernel/asus/Z017/
 
 # Cloning Dependencies
 
